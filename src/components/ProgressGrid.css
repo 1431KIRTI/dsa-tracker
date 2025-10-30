@@ -1,0 +1,21 @@
+.progress-grid {
+  display: grid;
+  grid-template-columns: repeat(15, 15px);
+  gap: 4px;
+  margin: 20px auto;
+  max-width: 300px;
+  justify-content: center;
+}
+
+.day-block {
+  width: 15px;
+  height: 15px;
+  background: #e0e0e0;
+  border-radius: 3px;
+  transition: background 0.3s ease;
+}
+
+.day-block.active {
+  background: #4caf50; /* green when completed */
+}
+
